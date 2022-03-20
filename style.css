@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(gambar1.jpeg);
+    background-size: cover;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    z-index: 9;
+}
+.container{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+ 
+.nav h1{
+    color: #fafafaa4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Marck Script",cursive;
+    font-size: 38px;
+}
+ 
+ 
+.filter{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+ 
+.description{
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fafafa;
+}
+.description h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Oleo Script', cursive;
+    margin-bottom: 20px ;
+}
+@media screen and (max-width:700px){
+    .container{
+        width: 100%;
+    }
+    .description h2{
+        font-size: 25px;
+        font-family: monospace;
+        color: salmon;
+    }
+    .description p{
+        font-size: 20px;
+        font-family: sans-serif;
+        text-align: left;
+    }
+}
